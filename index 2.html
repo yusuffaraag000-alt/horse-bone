@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مرحبا بك</title>
+<style>
+    /* تعيين الخط والخلفية */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1a1a;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    /* خلفية 3D */
+    #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3; /* شفافية حتى يظهر النص */
+    }
+
+    /* الصندوق اللي عليه النص */
+    .content {
+        text-align: center;
+        background: rgba(0,0,0,0.6);
+        padding: 30px 50px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    }
+
+    .content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .content a {
+        color: #00ffff;
+        text-decoration: none;
+        font-size: 1.5rem;
+        transition: 0.3s;
+    }
+
+    .content a:hover {
+        color: #ffcc00;
+        text-decoration: underline;
+    }
+
+    .enter-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 30px;
+        font-size: 1.2rem;
+        background-color: #00ffff;
+        color: #000;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .enter-button:hover {
+        background-color: #ffcc00;
+        color: #000;
+    }
+
+    /* جملة التصميم */
+    .designer {
+        margin-top: 15px;
+        font-size: 1rem;
+        color: #ccc;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+
+<div id="background">
+    <!-- يمكنك وضع iframe من Sketchfab -->
+    <iframe title="Horse Skeleton" src="https://sketchfab.com/models/eaca504567604e879b8ab2cf2763025e/embed" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<div class="content">
+    <h1>تم استخدام 3D Model من موقع</h1>
+    <a href="https://sketchfab.com/3d-models/horse-skeleton-eaca504567604e879b8ab2cf2763025e?utm_source=chatgpt.com" target="_blank">Sketchfab</a>
+    <br>
+    <button class="enter-button" onclick="enterSite()">ادخل إلى الموقع</button>
+    <div class="designer">تصميم Yusuffaraag</div>
+</div>
+
+<script>
+function enterSite() {
+    window.location.href = "index.html"; // ضع هنا رابط الصفحة الرئيسية لموقعك
+}
+</script>
+
+</body>
+</html>
